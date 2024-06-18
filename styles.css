@@ -1,0 +1,153 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #2e003e;
+  color: #eaeaea;
+}
+
+header {
+  background: #1a1a2e;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideInDown 0.5s ease-out;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #f5b942; /* Updated accent color */
+  transition: transform 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #eaeaea;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f5b942; /* Updated accent color */
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('wp9483225-old-japan-wallpapers.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: #f5b942; /* Updated accent color */
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards 0.5s;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #eaeaea;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards 1s;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4c5c68;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards 1.5s;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #f5b942; /* Updated accent color */
+  color: #2e003e;
+}
+
+section {
+  padding: 60px 20px;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f5b942; /* Updated accent color */
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a2e;
+  position: relative;
+  bottom: 0;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
