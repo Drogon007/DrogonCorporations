@@ -25,7 +25,7 @@ header {
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
-  color: #f5b942; /* Updated accent color */
+  color: #f5b942;
   transition: transform 0.3s ease;
 }
 
@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #f5b942; /* Updated accent color */
+  color: #f5b942;
 }
 
 .hero {
@@ -56,7 +56,7 @@ nav a:hover {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  padding-top: 60px; /* Adjust for fixed header */
+  padding-top: 60px;
 }
 
 .hero .overlay {
@@ -71,7 +71,7 @@ nav a:hover {
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
-  color: #f5b942; /* Updated accent color */
+  color: #f5b942;
   z-index: 1;
   opacity: 0;
   animation: fadeIn 2s ease-in forwards 0.5s;
@@ -85,21 +85,20 @@ nav a:hover {
   animation: fadeIn 2s ease-in forwards 1s;
 }
 
-.hero button {
+.hero .button {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #4c5c68;
   color: #fff;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
   z-index: 1;
   opacity: 0;
   animation: fadeIn 2s ease-in forwards 1.5s;
   transition: background-color 0.3s ease;
 }
 
-.hero button:hover {
-  background-color: #f5b942; /* Updated accent color */
+.hero .button:hover {
+  background-color: #f5b942;
   color: #2e003e;
 }
 
@@ -112,27 +111,46 @@ section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #f5b942; /* Updated accent color */
+  color: #f5b942;
   text-align: center;
+}
+
+.product-list, .member-list, .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product, .member, .project {
+  background: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img, .member img, .project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-link, .project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f5b942;
+  color: #2e003e;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 footer {
   text-align: center;
   padding: 20px;
   background: #1a1a2e;
-  position: relative;
-  bottom: 0;
-}
-
-@keyframes slideInDown {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
