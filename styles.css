@@ -147,6 +147,21 @@ section h2 {
   border-radius: 5px;
 }
 
+.product-affiliate a {
+  display: inline-block;
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.product-affiliate a:hover {
+  background-color: #cc7a00;
+}
+
+
 footer {
   text-align: center;
   padding: 20px;
